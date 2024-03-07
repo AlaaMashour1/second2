@@ -1,0 +1,410 @@
+.navbar {
+  background-color: rgba(4, 124, 112, 0.548); /* Baby blue with 50% opacity */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  padding: 10px 0; /* Adjust padding as needed */
+  margin: -10px;
+  text-align: center;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items on the main axis */
+  transition: transform 0.3s ease, backdrop-filter 0.3s ease; /* Add transition effect on transform and backdrop-filter */
+}
+
+.logo,
+.links {
+  display: flex; /* Use flexbox for layout within navbar */
+  align-items: center; /* Center items vertically */
+}
+
+.links {
+  flex-grow: 1; /* Allow links to grow to fill available space */
+}
+
+.links a {
+  margin: 0 10px; /* Adjust spacing between links */
+}
+
+.login {
+  margin-left: 10px; /* Adjust margin for login button */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+
+.navbar:hover {
+  /*transform: translateY(20px); /* Move navbar up by 20px on hover */
+  backdrop-filter: blur(10px); /* Apply blur effect on navbar hover */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: white;
+  
+}
+
+/* Add this to highlight the active page */
+.navbar a.active {
+  border-bottom: 3px solid white; /* Adjust color as needed */
+}
+
+.login {
+    width:80px ;
+     /* Adjust width as needed */
+    height: 50px; /* Equal to width for a perfect circle */
+    border-radius: 20%; /* Makes the button circular */
+    background-color:white; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add cursor pointer on hover */
+  
+  
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  color: rgb(0, 183, 255);
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  margin-left: 900px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.photo {
+  height: 100%;
+  width: 30%;
+}
+
+
+
+.all {
+  position: relative; /* Ensure the container is positioned relatively */
+  width: 641px;
+  height: 957.5px;
+  left: -150px;
+}
+
+.welcom {
+  position: absolute; /* Position the text absolutely */
+  top: 28%; /* Adjust top position as needed */
+  left: 29%; /* Adjust left position as needed */
+  transform: translate(-50%, -50%); /* Center the text */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the text horizontally */
+  
+}
+
+.welcom p {
+  margin: 0; /* Remove default paragraph margin */
+  padding: 0; /* Remove default paragraph padding */
+  font-size: 30px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: white;
+  margin-left: -20px;
+}
+
+ .tww{
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+
+
+/* secend page */
+
+
+ /* Styles for toggle container */
+.toggle-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Hide the checkbox */
+.toggle {
+  display: none;
+}
+
+/* Styles for toggle switch */
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Styles for toggle slider */
+.toggle-label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: aqua;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+/* Styles for checked state */
+.toggle:checked + .toggle-label {
+  background-color: #2196F3;
+}
+
+.toggle:checked + .toggle-label::after {
+  transform: translateX(20px);
+}
+
+/* Hide the checkbox */
+.toggle-input {
+  display: none;
+}
+
+/* Styles for toggle label */
+.toggle-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Styles for options list */
+.options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Show options when checkbox is checked */
+.toggle-input:checked ~ .options {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styles for individual option */
+.options li {
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hover effect on options */
+.options li:hover {
+  background-color: #ccc;
+}
+
+/* Style for the note option */
+.note-option {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#note{
+  box-sizing: 60px;
+}
+
+/* Hide the checkbox */
+.toggle {
+  display: none;
+}
+
+/* Styles for toggle label */
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Styles for toggle slider */
+.toggle-label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+/* Styles for checked state */
+.toggle:checked + .toggle-label {
+  background-color: #2196F3;
+}
+
+.toggle:checked + .toggle-label::after {
+  transform: translateX(20px);
+}
+
+/* Styles for the label text */
+.toggle-container span {
+  margin-left: 10px;
+}
+
+#msform{
+width: 55%;
+margin: 5% auto;
+text-align: center;
+position: relative;
+z-index: 1;
+background-color: white; /* the first part include four pages */
+border-radius: 20px;
+}
+
+#msform fieldset{
+  background:white;
+  border: 0 none;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: -40px 0;
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type){
+  display: none;
+}
+
+.next-action-button{
+  width: 150px;
+}
+
+#msform input,
+#msform textarea{
+
+padding: 10px;
+border: 2px solid rgb(12, 135, 135);
+border-radius: 11px;
+margin-bottom: 10px;
+margin: 20px;
+width: 100X;
+box-sizing: border-box;
+color: rgb(12, 135, 135);
+font-size:13px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus{
+  box-shadow: 0 0 2px #fff ,0 0 3px rgb(12, 135, 135);
+}
+
+.fs-titLe{
+font-size: 20px;
+font-weight: 500;
+text-transform: uppercase;
+color:#1089a4;
+margin-bottom: 10px;
+
+}
+
+
+.progressbar {
+  margin-bottom: 40px;
+  overflow: hidden;
+  counter-reset: step;
+  padding: 20px 20px;
+}
+
+.progressbar li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 20.33%;
+  float: left;
+  margin-left: 25px;
+  position: relative;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 15px;
+  color: #333333;
+  border-radius: 50px;
+  margin: 0 auto 5px auto;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid  rgb(8, 157, 157);
+}
+
+.progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: -50%;
+  top: 15px;
+  z-index: 1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.act:before,
+.progressbar li.act:after {
+  color: #fff;
+  background: rgb(7, 134, 134);
+  background: -webkit-linear-gradient(to right, rgb(8, 157, 157), #252525);
+  background:  rgb(8, 157, 157);
+}
+
+body.second.body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(197, 194, 194); /* Change the background color */
+}
+
+
+
+.moving{
+  color: rgb(7, 134, 134);
+  font-size: large;
+  margin-top: 90px;
+  padding-top: 20px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="css/second.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body class="second body">
+
+<div class="navbar">
+    <div class="logo">
+        <a href="#">logo</a>
+    </div>
+
+    <a class="act" href="#">Home</a>
+    <a href="#">Customers</a>
+    <a href="#">Partners</a>
+    <a href="#">Contact</a>
+    <a href="#">Become a Partner</a>
+    <div class="login-container">
+        <button class="tww" id="openLoginModalBtn">Login</button>
+    </div>
+    <a href="#">EN</a>
+</div>
+<form id="msform">
+    <p class="moving">Request for Moving</p>
+    <ul class="progressbar">
+    <li class="act">Moving From</li>
+    <li>Moving To</li>
+    <li>Details</li>
+    <li>Contact</li>
+    </ul> 
+<fieldset>
+<h3 class="fs-title">Where are you moving from?</h3>
+<div class="input">
+    <input type="text" placeholder="Street">
+    <input type="text" placeholder="Post Box">
+    <input type="text" placeholder="City">
+    <br>
+    <input type="text" placeholder="Object">
+    <input type="text" placeholder="Rooms">
+    <input type="text" placeholder="Floor">
+    <br>
+    <input type="text" placeholder="Area">
+    <input type="text" placeholder="Distance">
+    
+</div>
+<div class="checkboxes">
+    <label><input type="checkbox"> Left</label>
+    <label><input type="checkbox"> Garage</label>
+    <label><input type="checkbox"> Cellar</label>
+    <label><input type="checkbox"> Seller</label>
+    <label><input type="checkbox"> Dismantle Furniture</label>
+    <br>
+    <label><input type="checkbox"> Dismantle Lamps</label>
+    <label><input type="checkbox"> Wrap Up</label>
+    <label><input type="checkbox"> Storage</label>
+    <label><input type="checkbox"> Disposal</label>
+</div>
+<input type="button" name="next" class="next-action-button" value="next">
+
+</fieldset>
+
+
+<fieldset>
+<h3 class="fs-title">Where are you planing to move?</h3>
+<div class="inputs">
+    <input type="text" placeholder="Street">
+    <input type="text" placeholder="Post Box">
+    <input type="text" placeholder="City">
+    <br>
+    <input type="text" placeholder="Object">
+    <input type="text" placeholder="Floor">
+    <input type="text" placeholder="Distance">
+    <br>
+
+</div>
+<div class="checkboxes">
+    <label><input type="checkbox"> Unpacking</label>
+    <label><input type="checkbox"> Assemble Furniture</label>
+    <label><input type="checkbox"> Assemble lamps</label>
+</div>
+<input type="button" name="back" class="back-action-button" value="back">
+<input type="button" name="next" class="next-action-button" value="next">
+
+</fieldset>
+
+
+<fieldset>
+<h3 class="fs-title">Where are you planing to move?</h3>
+<div class="inputs">
+    <input type="date" id="movingDate" placeholder="Moving date">
+    <input type="text" placeholder="Flexbitiy">
+    <input type="text" placeholder="Available From">
+    <br>
+    <input type="text" placeholder="Focus">
+    <input type="text" placeholder="Boxes of borrow">
+    <input type="text" placeholder="Boxes of rent">
+    <br>
+    <div class="toggle-container">
+        <input type="text" id="boxesOfSaleInput" placeholder="Boxes of Sale">
+        <input type="checkbox" id="toggleButton" class="toggle">
+        <label for="toggleButton" class="toggle-label"></label>
+        <p>viewing desired</p>
+    </div>
+</div>
+
+<input type="text" id="note" placeholder="note">
+<br>
+<br>
+<input type="button" name="back" class="back-action-button" value="back">
+<input type="button" name="next" class="next-action-button" value="next">
+
+</fieldset>
+
+
+
+<fieldset>
+<h3 class="fs-title">Add your details</h3>
+<div class="inputs">
+    <input type="text"  placeholder="salute">
+    <input type="text" placeholder="Phone-No">
+
+    <br>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+    
+    <br>
+    <div class="toggle-container">
+        <input type="checkbox" id="toggleButton" class="toggle">
+        <label for="toggleButton" class="toggle-label"></label>
+        <span>Would you like to include an inventory list?</span>
+    </div>
+    
+</div>
+
+<br>
+<input type="button" name="back" class="back-action-button" value="back">
+<input type="button" name="next" class="next-action-button" value="next">
+
+</fieldset>
+
+</form>
+
+<script src="main.js"></script>
+</body>
